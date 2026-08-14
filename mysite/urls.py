@@ -25,4 +25,6 @@ urlpatterns = [
     path('contact/',views.contact, name='contact'), 
     path('skills/',views.skills, name='skills'),
     path('projects/',views.projects, name='projects'),
+    path('hello/<str:name>/', views.hello, name='hello'),  # 👈 NEW
+    path('age/<int:years>/', views.age, name='age'),
 ]
